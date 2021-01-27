@@ -514,3 +514,105 @@
 
 
 // SPLIT
+
+
+
+// 26thJan2021
+
+// EventListeners
+// AddEventListener
+
+// Syntax
+// Target.addEventListener("event", function)
+// Target.addEventListener("event", function)
+
+
+
+
+// let demo1 = document.querySelector(".demo1");
+
+// let count = 0
+
+// function toggleClassFunction() {
+//     demo1.classList.toggle('BGCheck')
+//     count++
+//     console.log(count);
+//     if (count > 9) {
+//         demo1.removeEventListener("click", toggleClassFunction)
+//     }
+// }
+
+// demo1.addEventListener("click", toggleClassFunction);
+
+// Query Selectors
+
+// let demo2 = document.querySelector(".demo1")
+
+// // console.log(demo2);
+
+// let allQuerySelector = document.querySelectorAll(".demo1")
+// let IDExample = document.getElementById("AELD");
+// let ClassExample = document.getElementsByClassName("BGCheck");
+
+// console.log(allQuerySelector);
+// console.log(IDExample);
+// console.log(ClassExample);
+
+// MATH
+
+// Math.Random
+// --> Function
+// --> Returns and floating point number b / w 0 and 1
+// console.log(Math.random());
+
+
+
+// Math.floor
+// --> function
+// rounds a decimal/float down to nearest whole integer
+// console.log(Math.floor(1.2));
+
+// Math.ceil
+// --> function
+// rounds a decimal/float up to nearest whole integer
+// console.log(Math.ceil(1.2));
+
+
+// let arr = ["Swiss", "Scotland", "Finland", "Sweden", "Nainital"];
+
+// const randomNumber = Math.random() * arr.length;
+
+// const index = Math.floor(randomNumber);
+
+// console.log("Today I am visiting--> " + arr[index]);
+
+
+
+// Date
+
+// const today = new Date();
+
+// const date = today.getDate();
+// console.log(`today's date--> ${date}`);
+
+// const day = today.getDay();
+// console.log(`today's day--> ${day}`);
+
+// const fullYear = today.getFullYear();
+// console.log(`fullYear--> ${fullYear}`);
+
+// const hours = today.getHours();
+// console.log(`hours--> ${hours}`);
+
+// const BdayShahank = new Date("Thursday, February 25, 2021 11:59:59 PM");
+
+// const mlstoBdayS = BdayShahank - today;
+
+// const minutes = mlstoBdayS / 60000
+
+// console.log(minutes);
+
+// let countdowntimer = document.querySelector("#bdayshahank");
+
+
+// countdowntimer.innerText = Math.round(minutes);

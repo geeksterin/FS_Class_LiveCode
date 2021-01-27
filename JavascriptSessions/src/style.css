@@ -1,3 +1,24 @@
 ul {
   color: brown;
 }
+
+#AELD {
+  background-color: cadetblue;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.demo1 {
+  background-color: red;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+}
+
+/* Writing a class that will toggle on event */
+
+.BGCheck {
+  background-color: blue;
+}
