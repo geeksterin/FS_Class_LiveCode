@@ -22,3 +22,15 @@ ul {
 .BGCheck {
   background-color: blue;
 }
+
+#domm {
+  margin-top: 50px;
+}
+
+.changingBG {
+  background-color: blue;
+}
+.BGRED {
+  background-color: red;
+  font-size: 75px;
+}

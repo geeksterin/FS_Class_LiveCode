@@ -616,3 +616,132 @@
 
 
 // countdowntimer.innerText = Math.round(minutes);
+
+// 28th Jan 2021
+// DOM Manipulations
+
+// Adding Elements To The DOM
+
+// 1. append
+// 2. appendChild
+
+let blocklevel = document.querySelector("#domm")
+console.log(blocklevel);
+
+// syntax to append/child
+
+// target.append("hellow world")
+// target.append("node")
+
+// block.append("Hello World. ")
+
+
+
+// create elements to add 
+// const body = document.body;
+// const div = document.createElement("div")
+// body.append(div)
+
+// Modifying element text 
+
+// const blockelement = document.querySelector("#domm")
+
+// console.log(blockelement.textContent);
+// console.log(blockelement.innerText);
+
+// Modifying HTML inside the elements / nodes
+
+const body = document.body;
+const div2 = document.createElement("div")
+
+// not to be used because security risk
+// div2.innerHTML = "<h1>We made this</h1>"
+// blocklevel.appendChild(div2);
+
+//  safe way of modifying inside element/node
+
+
+const headingNode = document.createElement("h1");
+headingNode.innerText = "This is the new removal candidate";
+
+div2.append(headingNode);
+body.append(div2)
+
+// console.log(div2);
+
+// Remove element from dom 
+
+// first way of removing
+// target.remove()
+// div2.remove();
+
+// second way of removing
+// target.removeChild(node)
+// body.removeChild(div2)
+
+// Modifying attributes of an element
+
+// accessing attribute
+// target.getAttribute("attributeName");
+
+console.log(blocklevel.getAttribute("title"));
+
+// blocklevel.setAttribute("title", "We made this from the JS"); changes the attribute if present
+// blocklevel.setAttribute("random", "does it show"); creates the attribute if absent
+// blocklevel.removeAttribute("title") removes the attribute
+
+// console.log((blocklevel.dataset));
+// const Manish = {
+//     firstName: "Manish"
+// }
+
+// Manish.lastName = "Kamti"
+
+// console.log(Manish);
+
+// blocklevel.dataset.lastName = "Kamti"
+
+// console.log((blocklevel.dataset));
+
+// MANIPULATE STYLES 
+
+// target.style.cssProperty = "value"
+
+// blocklevel.style.color = "red"
+// blocklevel.style.fontSize = "24px"
+
+
+// MANIPULATE CLASSES
+
+// add classes
+
+// syntax
+// target.classList.add("class name")
+console.log(blocklevel.classList);
+
+blocklevel.classList.add("changingBG");
+// blocklevel.classList.remove("changingBG");
+
+blocklevel.classList.toggle("changingBG");
+blocklevel.classList.toggle("BGRED");
+
+// Classes do NOT exist in JS before ECMA2015. 
+// As per the ECMA2015 or ES6 standards, class keyword is a syntactical sugar
+
+class ghost {
+    constructor(ghostName, ghostColor, ghostStartingPosition) {
+        this.name = ghostName;
+        this.color = ghostColor;
+        this.position = ghostStartingPosition
+    }
+}
+
+let first = new ghost("Joker", "black", 1);
+let second = new ghost("Captain Marvel", "Green", 3);
+let third = new ghost("Vamp", "red", "TEN");
+
+console.log(first);
+console.log(second);
+console.log(third);
+
+
