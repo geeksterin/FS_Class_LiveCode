@@ -21,3 +21,13 @@ attach that button to DOM]
 
 31st Jan 2021
 Convert keys' function into switch case and arrow function
+
+2nd Feb 2021
+
+Given an array of integers, return the indecies of two numbers such that they add up to a specific target
+
+
+
+
+array of nums = [4, 7, 3, 6, 5]
+target = 11

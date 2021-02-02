@@ -980,37 +980,144 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Promises
 
-    // function myDisplayer(some) {
-    //     document.getElementById("demo").innerHTML = some;
+    function myDisplayer(some) {
+        document.getElementById("demo").innerHTML = some;
+    }
+
+
+    let myPromise = new Promise(function callBack1(resolve, reject) {
+        let x = 0;
+
+        if (x == 0) {
+            resolve("OK");
+        } else {
+            reject("Error");
+        }
+    });
+
+    myPromise.then(
+        function (value) { myDisplayer(value); },
+        function (error) { myDisplayer(error); }
+    );
+
+
+    // Promise.then((err, result) => {
+    //     if (err) {
+    //         console.log(err);
+    //         1. get reference to error logger
+    //         2. error logger display - inline
+    //         3. get reference to sign in span
+    //         4. when span is clicked, call a function 
+    //         5. In that function, call the sign in API
+
+    //     }
+    //     // route to homepage
+    // })
+
+
+    // CallBack Functions
+
+
+    // Concept
+    // // Outer Function
+    // const OuterFunction = function (callBackFunc) {
+    //     callBackFunc()
     // }
 
-    // let myPromise = new Promise(function (resolve, reject) {
-    //     let x = 0;
 
-    //     if (x == 0) {
-    //         resolve("OK");
-    //     } else {
-    //         reject("Error");
+    // // Callback Function
+    // const callBackFunc = function () {
+    //     console.log("CallBack");
+    // }
+
+
+
+    // OuterFunction(callBackFunc);
+
+
+    // practical usecase
+
+    // const login = function (resolveLogin) {
+    //     // call api
+    //     // api returns a result
+
+
+    //     resolveLogin(result)
+    // }
+
+
+    // // Callback Function
+    // const resolveLogin = function (result) {
+    //     if (result == ok) {
+    //         // send user to homepage
     //     }
-    // });
-
-    // myPromise.then(
-    //     function (value) { myDisplayer(value); },
-    //     function (error) { myDisplayer(error); }
-    // );
+    //     // show error to user
+    // }
 
 
-    Promise.then((err, result) => {
-        if (err) {
-            console.log(err);
-            1. get reference to error logger
-            2. error logger display - inline
-            3. get reference to sign in span
-            4. when span is clicked, call a function 
-            5. In that function, call the sign in API
-        }
-        // route to homepage
-    })
+
+    // outerFunction(callback1(){
+    //     
+    //     callBack1( callback2, callback3 ){
+    //         
+    //         if(true){
+    //             callback2(){
+
+    //             }
+    //         } 
+    //         callback3(){
+
+    //         }
+    //     }
+    // })
+
+
+
+    // let outerFunction = function () {
+    //     /**Function statements */
+    //     callback1();
+    // }
+
+    // outerFunction()
+    //     .then(callback1)
+    //     .then(callback2)
+    //     .then(callback3)
+
+
+    // const URL = "https://jsonplaceholder.typicode.com/posts";
+
+
+    // console.log(fetch(URL));
+
+    // fetch(URL) /**returns a promise */
+    //     .then(function (response) {
+    //         return response.json() /**returns a promise */
+    //     }).then(function (result) {
+    //         console.log(result);
+    //         console.log(result[4].title);
+    //     })
+
+
+
+
+
+
+
+
+
+
+    // async/await
+
+    // try {
+    //     await function () {
+    //         let return1 = async outerFunction();
+    //         let return2 = async callback1();
+    //     }
+    // } catch (error) {
+    //     console.log(error);
+    // }
+
+
 
 
 })
