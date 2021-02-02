@@ -6,3 +6,6 @@ Class --> Diff b/w nodelist and array
 28th Jan 2021
 
 --> Class explains DOM Manipulations (class toggle);
+
+30th jan 2021
+--> Explain why setTimeout( ()=>clearInterval(), time ) works and setTimeout( clearInterval(), time ) doesnt

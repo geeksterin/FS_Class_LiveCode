@@ -1,36 +1,17 @@
-ul {
-  color: brown;
-}
-
-#AELD {
-  background-color: cadetblue;
-  height: 500px;
+#parentCircle {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 
-.demo1 {
+.circle {
   background-color: red;
-  height: 250px;
-  width: 250px;
-  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  border-radius: 70px;
 }
 
-/* Writing a class that will toggle on event */
-
-.BGCheck {
-  background-color: blue;
-}
-
-#domm {
-  margin-top: 50px;
-}
-
-.changingBG {
-  background-color: blue;
-}
-.BGRED {
-  background-color: red;
-  font-size: 75px;
+#errLogger {
+  display: none;
 }
